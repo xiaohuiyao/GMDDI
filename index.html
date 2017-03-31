@@ -15,7 +15,7 @@ path.arc {
 .node circle {
 cursor: pointer;
 fill: #eee;
-stroke: black;
+stroke: white;
 stroke-width: 1.0px;
 }
 
@@ -153,13 +153,15 @@ var nodeUpdate = node.transition()
 nodeUpdate.select("circle")
 .attr("r", function(d){ var or;
 	if(d.or=="N/A") {or = 1;}
-	else {or = Math.sqrt(d.or*10);}
+	else if(d.or >=1) {or = Math.sqrt(d.or*10);}
+	else {or = Math.sqrt(10/d.or);}
 	return or;
 }) // the size of the node, modify to re-generate
+
 .style("fill", function(d) {var nodeColor;
-	if(d.p >= 0.05) {nodeColor = "white";}
-	else if(d.p >= 0.0001) {nodeColor = "lightblue";}
-	else {nodeColor = "blue";}
+	if(d.p >= 0.05) {nodeColor = "#CCE5FF";}
+	else if(d.p >= 0.0001) {nodeColor = "#0080FF";}
+	else {nodeColor = "#0066CC";}
 	return nodeColor;}
 ); //For Danai: Change the color to any you prefer
 

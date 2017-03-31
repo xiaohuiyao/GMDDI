@@ -7,8 +7,8 @@
 			"name": "GADOBENATE DIMEGLUMINE",
 			"children": [
 				{
-					"or": 24.6016,
-					"p": 1.20439e-07,
+					"or": 2.6016,
+					"p": 0.20439,
 					"name": "GADODIAMIDE"
 				},
 				{
@@ -30,11 +30,11 @@
 			"children": [
 				{
 					"or":  2.9149,
-					"p": 1.88333e-06,
+					"p": 0.003,
 					"name": "GADOBENATE DIMEGLUMINE"
 				},
 				{
-					"or": 4.0661,
+					"or": 0.0661,
 					"p": 5.29075e-07,
 					"name": "GADOPENTETATE DIMEGLUMINE"
 				},
